@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navapp"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="syahnanda.fachri.aboutmev3.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_bio"
+            app:destination="@id/bio" />
+        <action
+            android:id="@+id/action_menu_to_fungsiapp"
+            app:destination="@id/fungsiapp" />
+    </fragment>
+    <fragment
+        android:id="@+id/bio"
+        android:name="syahnanda.fachri.aboutmev3.Bio"
+        android:label="fragment_bio"
+        tools:layout="@layout/fragment_bio" />
+    <fragment
+        android:id="@+id/fungsiapp"
+        android:name="syahnanda.fachri.aboutmev3.Fungsiapp"
+        android:label="fragment_fungsiapp"
+        tools:layout="@layout/fragment_fungsiapp" />
+</navigation>
